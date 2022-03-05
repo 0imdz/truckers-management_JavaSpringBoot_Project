@@ -1,0 +1,63 @@
+2022/01/13 01:40:37 - ALTA - Juan Carlos, Navarro, juan@gmail.com, 034 633456734, 1960-07-09, Hombre, Liquidas, S√≠, 
+2022/01/13 01:41:19 - LISTADO - Juan Carlos Navarro
+2022/01/13 01:42:16 - ALTA - Jose Luis, Mart√≠nez, jose@gmail.com, 034 633414637, 1979-03-07, Hombre, Granel, S√≠, Trabajador y resolutivo
+2022/01/13 01:42:18 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez
+2022/01/13 01:43:45 - ALTA - Miguel √Ångel, Mart√≠nez, miguelmartinez@outlook.com, 034 633424639, 1999-03-07, Hombre, Liquidas, S√≠, 
+2022/01/13 01:43:53 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez, Miguel √Ångel Mart√≠nez
+2022/01/13 01:44:34 - ALTA - Laura, Montoya, laura@gmail.com, 034 633424637, 1999-03-07, Hombre, Granel, No, 
+2022/01/13 01:44:36 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez, Miguel √Ångel Mart√≠nez, Laura Montoya
+2022/01/13 01:45:55 - ALTA - Paula Mar√≠a, Navarro, paula@outlook.com, 034 622435423, 1999-03-07, Hombre, Liquidas, S√≠, 
+2022/01/13 01:45:56 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez, Miguel √Ångel Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro
+2022/01/13 01:48:07 - ALTA - Paula Mar√≠a, D√≠az, ismaelmdiaz99@gmail.com, 034 633424637, 1999-03-07, Hombre, Liquidas, S√≠, 
+2022/01/13 01:48:13 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez, Miguel √Ångel Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro, Paula Mar√≠a D√≠az
+2022/01/13 01:49:22 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez, Miguel √Ångel Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro, Paula Mar√≠a D√≠az
+2022/01/13 01:50:47 - OPERACI√ìN REGISTRO
+2022/01/13 01:57:24 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez, Miguel √Ångel Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro, Paula Mar√≠a D√≠az
+2022/01/13 01:57:45 - BAJA - Paula Mar√≠a, D√≠az, ismaelmdiaz99@gmail.com, 034 633424637, 1999-03-07, Hombre, Liquidas, S√≠, 
+2022/01/13 01:57:45 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez, Miguel √Ångel Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro
+2022/01/13 01:57:59 - BAJA - Miguel √Ångel, Mart√≠nez, miguelmartinez@outlook.com, 034 633424639, 1999-03-07, Hombre, Liquidas, S√≠, 
+2022/01/13 01:57:59 - LISTADO - Juan Carlos Navarro, Jose Luis Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro
+2022/01/13 01:58:11 - BAJA - Juan Carlos, Navarro, juan@gmail.com, 034 633456734, 1960-07-09, Hombre, Liquidas, S√≠, 
+2022/01/13 01:58:11 - LISTADO - Jose Luis Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro
+2022/01/13 01:58:21 - OPERACI√ìN REGISTRO
+2022/01/13 11:06:00 - LISTADO - Jose Luis Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro
+2022/01/13 11:06:05 - OPERACI”N REGISTRO
+2022/01/13 11:06:31 - OPERACI”N REGISTRO
+2022/01/13 11:06:47 - LISTADO - Jose Luis Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro
+2022/01/13 11:07:14 - MODIFICACI”N - USUARIO CON ID: 3725 - G…NERO: Hombre / Mujer | CONTRATADO ACTUALMENTE: S√≠ / SÌ
+2022/01/13 11:07:18 - LISTADO - Jose Luis Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro
+2022/01/13 11:07:31 - LISTADO - Jose Luis Mart√≠nez, Laura Montoya, Paula Mar√≠a Navarro
+2022/01/13 11:07:44 - MODIFICACI”N - USUARIO CON ID: 6160 - G…NERO: Hombre / Mujer | 
+2022/01/13 11:07:48 - LISTADO - Jose Luis Mart√≠nez, Paula Mar√≠a Navarro, Laura Montoya
+2022/01/13 11:07:54 - OPERACI”N REGISTRO
+2022/02/25 18:55:35 - LISTADO - 
+2022/02/25 18:55:50 - OPERACI”N REGISTRO
+2022/02/25 19:01:15 - LISTADO - 
+2022/02/25 19:03:07 - ALTA - Ismael, DÌaz, ismaelmdiaz99@gmail.com, 633424637, 1999-03-07, Hombre, Liquidas, SÌ, 
+2022/03/04 11:22:42 - LISTADO - 
+2022/03/04 11:24:49 - ALTA - Ismael, DÌaz, ismaelmdiaz99@gmail.com, 633424637, 1999-03-03, Hombre, Liquidas, SÌ, 
+2022/03/04 11:24:55 - LISTADO - 
+2022/03/04 11:25:40 - LISTADO - Ismael DÌaz, Ismael DÌaz
+2022/03/04 11:26:32 - ALTA - tgerfe, rjinomn, rgt54yg@gmail.com, 633424637, 1999-03-03, Hombre, Liquidas, SÌ, 
+2022/03/04 11:26:33 - LISTADO - Ismael DÌaz, Ismael DÌaz, tgerfe rjinomn
+2022/03/04 11:26:56 - OPERACI”N REGISTRO
+2022/03/04 11:27:01 - LISTADO - Ismael DÌaz, Ismael DÌaz, tgerfe rjinomn
+2022/03/04 15:46:29 - LISTADO - Ismael DÌaz, Ismael DÌaz, tgerfe rjinomn
+2022/03/04 15:54:10 - BAJA - Ismael, DÌaz, ismaelmdiaz99@gmail.com, 633424637, 1999-03-07, Hombre, Liquidas, SÌ, 
+2022/03/04 15:54:10 - LISTADO - Ismael DÌaz, tgerfe rjinomn
+2022/03/04 15:54:17 - LISTADO - Ismael DÌaz, tgerfe rjinomn
+2022/03/04 15:54:21 - BAJA - Ismael, DÌaz, ismaelmdiaz99@gmail.com, 633424637, 1999-03-03, Hombre, Liquidas, SÌ, 
+2022/03/04 15:54:21 - LISTADO - tgerfe rjinomn
+2022/03/04 15:54:38 - LISTADO - tgerfe rjinomn
+2022/03/04 15:55:28 - LISTADO - tgerfe rjinomn
+2022/03/04 15:58:09 - MODIFICACI”N - USUARIO CON ID: 882 - NOMBRE: tgerfe / Prueba I | APELLIDOS: rjinomn / Primera | CORREO: rgt54yg@gmail.com / pruebaprimera@gmail.com | TEL…FONO: 633424637 / 633423637 | 
+2022/03/04 15:58:14 - LISTADO - Prueba I Primera
+2022/03/05 16:27:47 - ALTA - Ismael, DÌaz, ismaelmdiaz99@gmail.com, 633424637, 1999-03-03, Hombre, Liquidas, SÌ, 
+2022/03/05 16:27:49 - LISTADO - Prueba I Primera, Ismael DÌaz
+2022/03/05 16:28:10 - BAJA - Ismael, DÌaz, ismaelmdiaz99@gmail.com, 633424637, 1999-03-03, Hombre, Liquidas, SÌ, 
+2022/03/05 16:28:10 - LISTADO - Prueba I Primera
+2022/03/05 16:32:34 - LISTADO - Prueba I Primera
+2022/03/05 16:32:39 - LISTADO - Prueba I Primera
+2022/03/05 16:32:52 - OPERACI”N REGISTRO
+2022/03/05 16:34:08 - LISTADO - Prueba I Primera
+2022/03/05 16:34:43 - LISTADO - Prueba I Primera

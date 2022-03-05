@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+}
+
+
+#login-box{
+    background-color: black;
+}
+
+#login-form h1{
+    font-family: Montserrat;
+}
+
+#login-form hr{
+    background-color: #00B4FE;
+}
+
+#form-group{
+    text-align: left;
+}
+
+label{
+    margin-top: 10px;
+    color: white;
+    font-family: Montserrat;
+}
+
+.form-control{
+    background-color: black;
+    border-radius:0px;
+    color: #00B4FE;
+    font-family: Montserrat;
+    height: 5vh;
+    border: 1px solid #575757;
+}
+
+.form-control input{
+    background-color: black;
+    border-radius:0px;
+    color: #00B4FE;
+    font-family: Montserrat;
+}
+
+#login .container #login-row #login-column #login-box {
+    margin-top: 110px;
+    max-width: 600px;
+    height: 320px;
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+}
+
+.botonfin:hover {
+    color: #fff;
+    border: 1px solid white;
+    transition: ease-in-out 0.9s;
+}
+
+button .botonvolver:hover {
+    background-color: #90AEDA;
+    transition: ease-in-out 0.9s;
+}
+
+.checkboxstyle{
+    text-align: center;
+    border: 1px solid #575757;
+}
+
+.checkboxstyle label{
+    color: #90AEDA;
+}
+
+select{
+    width: 100%;
+    height: 5vh;
+}
+
+option{
+    text-align: center;
+}
+
+.error{
+    color: red;
+    margin-top: 0px;
+}

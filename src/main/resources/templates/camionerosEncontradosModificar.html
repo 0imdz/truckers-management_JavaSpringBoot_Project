@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link th:href="@{/camionerosEncontradosModificar.css}" rel="stylesheet" />
+</head>
+
+<body>
+<h1>Seleccione el transportista que desea modificar.</h1>
+<hr></hr>
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr style="background-color: #90AEDA">
+                <td>Nombre</td>
+                <td>Apellidos</td>
+                <td>Correo</td>
+                <td>Teléfono</td>
+                <td>Fecha de nacimiento</td>
+                <td>Género</td>
+                <td>Transporte de mercancías</td>
+                <td>Comentarios</td>
+                <td>Actualmente en plantilla</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="camionero : ${camionerosEncontradosModificar}">
+                <td th:text="${camionero.nombre}"></td>
+                <td th:text="${camionero.apellidos}"></td>
+                <td th:text="${camionero.correo}"></td>
+                <td th:text="${camionero.telefono}"></td>
+                <td th:text="${camionero.nacimiento}"></td>
+                <td th:text="${camionero.genero}"></td>
+                <td th:text="${camionero.transporteMercancias}"></td>
+                <td th:text="${camionero.comentarios}"></td>
+                <td th:text="${camionero.contratadoActualmente}"></td>
+                <td>
+                    <a th:href="@{/editar/}+${camionero.id}">Editar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

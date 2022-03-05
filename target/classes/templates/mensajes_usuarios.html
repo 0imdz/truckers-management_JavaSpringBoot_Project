@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link th:href="@{/mensajes_usuarios.css}" rel="stylesheet" />
+</head>
+<body>
+    <div class="fallos">
+        <h1>Un fallo ha sido detectado.</h1>
+        <hr style="border: 1px solid white"></hr>
+        <p style="text-align: center" th:text="${mensaje}"></p>
+        <div class="form-group" style="text-align:center; font-family: Montserrat;">
+            <a th:href="@{/}"><button style="text-align: center; border: 1px solid white; background-color: black; color: white; margin-top: 20px; border-radius: 0px;" class="btn botonvolver">Volver a inicio</button></a>
+        </div>
+    </div>
+</body>
+</html>

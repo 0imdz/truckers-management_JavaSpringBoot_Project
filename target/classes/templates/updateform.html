@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link th:href="@{/updateform.css}" rel="stylesheet" />
+</head>
+
+<body>
+<div id="login">
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" style="color: black" class="form" th:action="@{/modificacionrealizada}" th:object="${camionero}" method="post">
+                        <h1 style="color: #2f2f2f">Modificación.</h1>
+                        <hr></hr>
+
+                        <input type="hidden" th:field="*{id}" value="${camionero.id}" readonly="readonly">
+
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            </br>
+                            <label class="error" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></label>
+                            <br/>
+                            <input th:field="*{nombre}" value="${camionero.nombre}" type="text" class="form-control" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Apellidos</label>
+                            <br/>
+                            <label class="error" th:if="${#fields.hasErrors('apellidos')}" th:errors="*{apellidos}"></label>
+                            <br/>
+                            <input th:field="*{apellidos}" value="${camionero.apellidos}" type="text" class="form-control" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Correo electrónico</label>
+                            <br/>
+                            <label class="error" th:if="${#fields.hasErrors('correo')}" th:errors="*{correo}"></label>
+                            <br/>
+                            <input th:field="*{correo}" value="${camionero.correo}" type="text" class="form-control" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <br/>
+                            <label class="error" th:if="${#fields.hasErrors('telefono')}" th:errors="*{telefono}"></label>
+                            <br/>
+                            <input th:field="*{telefono}" value="${camionero.telefono}" type="text" class="form-control" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Fecha de nacimiento</label>
+                            <br/>
+                            <label class="error" th:if="${#fields.hasErrors('nacimiento')}" th:errors="*{nacimiento}"></label>
+                            <br/>
+                            <input th:field="*{nacimiento}" value="${camionero.nacimiento}" type="text" class="form-control" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat"/>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 4vh">
+                            <label>Género</label>
+                            <br/>
+                            <label class="error" th:if="${#fields.hasErrors('genero')}" th:errors="*{genero}"></label>
+                            <br/>
+                            <div class="checkboxstyle">
+                                <input type="radio" th:field="*{genero}" value="Hombre">
+                                <label style="margin-right: 40px" th:for="${genero}" value="${camionero.genero}">Hombre</label>
+                                <input type="radio" th:field="*{genero}" value="Mujer">
+                                <label th:for="${genero}" value="${camionero.genero}">Mujer</label>
+                                <input style="margin-left: 40px" type="radio" th:field="*{genero}" value="No especificado">
+                                <label th:for="${genero}" value="${camionero.genero}">Otro</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Se encuentra en plantilla actualmente</label>
+                            <br/>
+                            <label class="error" th:if="${#fields.hasErrors('contratadoActualmente')}" th:errors="*{contratadoActualmente}"></label>
+                            <br/>
+                            <div class="checkboxstyle">
+                                <input type="radio" th:field="*{contratadoActualmente}" value="Sí">
+                                <label style="margin-right: 40px" th:for="${contratadoActualmente}" value="${camionero.contratadoActualmente}">Sí</label>
+                                <input type="radio" th:field="*{contratadoActualmente}" value="No">
+                                <label th:for="${contratadoActualmente}" value="${camionero.contratadoActualmente}">No</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 4vh">
+                            <label th:for="${transporteMercancias}">Transporte mercancías</label>
+                            </br>
+                            <label class="error" th:if="${#fields.hasErrors('transporteMercancias')}" th:errors="*{transporteMercancias}"></label>
+                            <br/>
+                            <div class="form-group">
+                                <select th:field="*{transporteMercancias}" value="${camionero.transporteMercancias}" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat">
+                                    <option value="Liquidas">Líquidas</option>
+                                    <option value="Pallets">Pallets</option>
+                                    <option value="Granel">Granel</option>
+                                    <option value="Gases">Gases</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Comentarios</label>
+                            <br/>
+                            <label class="error" th:if="${#fields.hasErrors('comentarios')}" th:errors="*{comentarios}"></label>
+                            <br/>
+                            <textarea th:field="*{comentarios}" value="${camionero.comentarios}" rows="5" cols="49" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat">Escribe aquí tus comentarios</textarea>
+                        </div>
+
+                        <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                            <input type="submit" style="background-color: #90AEDA; color: black; margin-top: 20px; border-radius: 0px; width: 100%" class="btn botonfin" value="Finalizar" />
+                            <br/>
+                        </div>
+                    </form>
+                    <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                        <a th:href="@{/}"><button style="text-align: center; border: 1px solid white; background-color: black; color: white; margin-top: 20px; border-radius: 0px;" class="btn botonvolver">Volver</button></a>
+                    </div>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<!--<body>-->
+<!--  <h1>Update form</h1>-->
+
+<!--  <form action="#" th:action="@{/modificacionrealizada}" th:object="${camionero}" method="post">-->
+<!--      <p>-->
+<!--          <input type="hidden" th:field="*{id}" value="${camionero.id}" readonly="readonly">-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--          Nombre:-->
+<!--          <input type="text" th:field="*{nombre}" value="${camionero.nombre}">-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--          Apellidos:-->
+<!--          <input type="text" th:field="*{apellidos}" value="${camionero.apellidos}">-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--          Correo:-->
+<!--          <input type="text" th:field="*{correo}" value="${camionero.correo}">-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--          Teléfono:-->
+<!--          <input type="text" th:field="*{telefono}" value="${camionero.telefono}">-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--          <label>Fecha de nacimiento: </label>-->
+<!--          <input type="text" th:field="*{nacimiento}" value="${camionero.nacimiento}">-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--          Género:-->
+<!--          <input type="radio" th:field="*{genero}" value="Hombre">-->
+<!--          <label th:for="${genero}" value="${camionero.genero}">Hombre</label>-->
+<!--          <input type="radio" th:field="*{genero}" value="Mujer">-->
+<!--          <label th:for="${genero}" value="${camionero.genero}">Mujer</label>-->
+<!--      </p>-->
+
+<!--      <label th:for="${transporteMercancias}" value="${camionero.transporteMercancias}">Transporte mercancías</label>-->
+<!--      <select th:field="*{transporteMercancias}" value="${camionero.transporteMercancias}">-->
+<!--          <option value="Liquidas">Líquidas</option>-->
+<!--          <option value="Pallets">Pallets</option>-->
+<!--          <option value="Granel">Granel</option>-->
+<!--          <option value="Gases">Gases</option>-->
+<!--      </select>-->
+
+<!--      <p>-->
+<!--          Comentarios:-->
+<!--          <textarea th:field="*{comentarios}" value="${camionero.comentarios}" rows="10" cols="40">Escribe aquí tus comentarios</textarea>-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--          Contratado Actualmente:-->
+<!--          <input type="text" th:field="*{contratadoActualmente}" value="${camionero.contratadoActualmente}">-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--          <input type="submit">-->
+<!--      </p>-->
+<!--  </form>-->
+<!--</body>-->
+</html>

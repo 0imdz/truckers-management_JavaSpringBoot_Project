@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>Insert title here</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link th:href="@{/index.css}" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" style="color: black" class="form">
+                            <h1 style="color: #2f2f2f">Sistema de gestión de transportistas.</h1>
+                            <hr></hr>
+
+                            <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                                <a href="/alta"><button style="background-color: #90AEDA; color: black; margin-top: 20px; border-radius: 0px; width: 100%" class="btn botonfin" type="button">Altas</button></a>
+                                <br/>
+                            </div>
+
+                            <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                                <a href="/baja"><button style="background-color: #90AEDA; color: black; margin-top: 20px; border-radius: 0px; width: 100%" class="btn botonfin" type="button">Bajas</button></a>
+                                <br/>
+                            </div>
+
+                            <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                                <a href="/busquedadecamionero"><button style="background-color: #90AEDA; color: black; margin-top: 20px; border-radius: 0px; width: 100%" class="btn botonfin" type="button">Modificaciones</button></a>
+                                <br/>
+                            </div>
+
+                            <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                                <a href="/list"><button style="background-color: #90AEDA; color: black; margin-top: 20px; border-radius: 0px; width: 100%" class="btn botonfin" type="button">Listas</button></a>
+                                <br/>
+                            </div>
+
+                            <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                                <a href="/operaciones"><button style="background-color: #90AEDA; color: black; margin-top: 20px; border-radius: 0px; width: 100%" class="btn botonfin" type="button">Registro de operaciones</button></a>
+                                <br/>
+                            </div>
+                        </form>
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

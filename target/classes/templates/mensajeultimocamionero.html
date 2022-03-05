@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link th:href="@{/mensajeultimocamionero.css}" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="registroexitoso">
+        <tr th:each="data : ${camionerosEncontrados}">
+            <td><h1>No puede haber menos de un camionero almacenado.</h1></td>
+            <td>
+                <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                    <a th:href="@{/baja}"><button style="text-align: center; border: 1px solid white; background-color: black; color: white; margin-top: 20px; border-radius: 0px;" class="btn botonvolver">Volver</button></a>
+                </div>
+            </td>
+        </tr>
+    </div>
+</body>
+</html>

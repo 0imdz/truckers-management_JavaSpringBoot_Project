@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link th:href="@{/baja.css}" rel="stylesheet" />
+</head>
+
+<body>
+<div id="login">
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" style="color: black" class="form" th:action="@{/nombre}" th:object="${camioneros}" method="get">
+                        <h1 style="color: #2f2f2f">Busque el transportista que desea dar de baja.</h1>
+                        <hr></hr>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <!--                            </br>-->
+                            <!--                            <label class="error" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></label>-->
+                            <br/>
+                            <input th:field="*{nombre}" type="text" class="form-control" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Apellidos</label>
+                            <!--                            <br/>-->
+                            <!--                            <label class="error" th:if="${#fields.hasErrors('apellidos')}" th:errors="*{apellidos}"></label>-->
+                            <br/>
+                            <input th:field="*{apellidos}" type="text" class="form-control" style="background-color: black; border-radius:0px; color: #90AEDA; font-family: Montserrat"/>
+                        </div>
+
+                        <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                            <input type="submit" style="background-color: #90AEDA; color: black; margin-top: 20px; border-radius: 0px; width: 100%" class="btn botonfin" value="Buscar" />
+                            <br/>
+                        </div>
+                    </form>
+                    <div class="form-group" style="text-align:center; font-family: Montserrat;">
+                        <a th:href="@{/}"><button style="text-align: center; border: 1px solid white; background-color: black; color: white; margin-top: 20px; border-radius: 0px;" class="btn botonvolver">Volver</button></a>
+                    </div>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<!--<body>-->
+
+<!--    <div class="container" style="margin-top: 50px; margin-bottom: 50px">-->
+<!--        <div class="cabecera">-->
+<!--            <h1 style="color: #9a9a9a;text-align: left">Baja.</h1>-->
+<!--            <hr></hr>-->
+<!--        </div>-->
+
+<!--        <div style="margin-top: 50px; margin-bottom: 50px">-->
+<!--            <form th:action="@{/nombre}" th:object="${camioneros}" method="get">-->
+<!--                <input type="text" th:field="*{nombre}">-->
+<!--                <input type="text" th:field="*{apellidos}">-->
+<!--                <button type="submit">Buscar</button>-->
+<!--            </form>-->
+<!--        </div>-->
+
+<!--        <table class="table table-bordered table-striped">-->
+<!--            <thead>-->
+<!--                <tr>-->
+<!--                    <th>Nombre</th>-->
+<!--                    <th>Apellidos</th>-->
+<!--                    <th>Correo</th>-->
+<!--                    <th>Teléfono</th>-->
+<!--                    <th>Fecha de nacimiento</th>-->
+<!--                    <th>Género</th>-->
+<!--                    <th>transporteMercancias</th>-->
+<!--                    <th>Comentarios</th>-->
+<!--                    <th>contratadoActualmente</th>-->
+<!--                </tr>-->
+<!--            </thead>-->
+<!--            <tbody>-->
+<!--                <tr th:each="data : ${camionerosPorNombre}">-->
+<!--                    <td th:text="${data.nombre}"></td>-->
+<!--                    <td th:text="${data.apellidos}"></td>-->
+<!--                    <td th:text="${data.correo}"></td>-->
+<!--                    <td th:text="${data.telefono}"></td>-->
+<!--                    <td th:text="${data.nacimiento}"></td>-->
+<!--                    <td th:text="${data.genero}"></td>-->
+<!--                    <td th:text="${data.transporteMercancias}"></td>-->
+<!--                    <td th:text="${data.comentarios}"></td>-->
+<!--                    <td th:text="${data.contratadoActualmente}"></td>-->
+<!--                </tr>-->
+<!--            </tbody>-->
+<!--        </table>-->
+<!--    </div>-->
+<!--</body>-->
+</html>

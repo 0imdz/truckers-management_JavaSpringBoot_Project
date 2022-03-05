@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link th:href="@{/mostrado.css}" rel="stylesheet" />
+</head>
+<body>
+    <h1>Mostrado.</h1>
+    <hr></hr>
+    <div class="container">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr style="background-color: #90AEDA">
+                    <td>Nombre</td>
+                    <td>Apellidos</td>
+                    <td>Correo</td>
+                    <td>Teléfono</td>
+                    <td>Fecha de nacimiento</td>
+                    <td>Género</td>
+                    <td>Transporte de mercancías</td>
+                    <td>Comentarios</td>
+                    <td>Actualmente en plantilla</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="camionero : ${camioneros}">
+                    <td th:text="${camionero.nombre}"></td>
+                    <td th:text="${camionero.apellidos}"></td>
+                    <td th:text="${camionero.correo}"></td>
+                    <td th:text="${camionero.telefono}"></td>
+                    <td th:text="${camionero.nacimiento}"></td>
+                    <td th:text="${camionero.genero}"></td>
+                    <td th:text="${camionero.transporteMercancias}"></td>
+                    <td th:text="${camionero.comentarios}"></td>
+                    <td th:text="${camionero.contratadoActualmente}"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="form-group" style="text-align:left; font-family: Montserrat;">
+            <a th:href="@{/}">
+                <button style="text-align: center; border: 1px solid white; background-color: black; color: white; margin-top: 20px; border-radius: 0px;"
+                        class="btn botonvolver">Inicio</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
